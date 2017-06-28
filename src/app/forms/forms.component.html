@@ -1,0 +1,49 @@
+
+    <div class="right_col" role="main" id="maindiv">
+      <div class="x_panel">
+        <div class="x_content">
+          <br />
+          <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" novalidate [formGroup]="form" (ngSubmit)="onSubmit(form)" #f="ngForm" >
+
+              <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required"> *  </span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="first-name" formControlName="firstname"  class="form-control col-md-7 col-xs-12 " >
+                             <control-messages [control]="form.controls.firstname" [form]="f"></control-messages>
+             
+                </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Last Name <span class="required">*</ span>
+                  </label>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input type="text" id="last-name" formControlName="lastname" class="form-control col-md-7 col-xs-12 " >
+                     <control-messages [control]="form.controls.lastname" [form]="f"></control-messages>
+               
+                  </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Email:</label>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input type="email" class="form-control " formControlName="email" name="email"   (ngModel)="email"  >
+                      <control-messages [control]="form.controls.email" [form]="f"></control-messages>
+                    </div>
+                    
+                  </div>  
+                  <div class='col-md-3'>
+                      <button type="submit" class="btn btn-success " >Submit</button>
+                  </div>
+                       
+          </form>
+        </div>
+                
+      </div>     
+  </div>
+   
+
+
+
+
+                 
