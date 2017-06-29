@@ -43,3 +43,39 @@ input.parsley-error, select.parsley-error, textarea.parsley-error {
 .one {
     color: red;
 }
+.form-group {
+    margin: 10px 0;
+}
+control-messages, .control-label{
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+}
+.formSubmit {
+    box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 10px 0;
+    min-width: 88px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 2px;
+    background-color: #69f0ae;
+}
+control-messages, .required {
+    color: red;
+}
+control-messages {
+    font-size: 12px;
+}
